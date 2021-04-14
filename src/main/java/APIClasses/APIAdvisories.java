@@ -11,7 +11,7 @@ public class APIAdvisories {
 
     public APIAdvisories() {
         advisories = getJSONArray("https://api.bart.gov/api/bsa.aspx?cmd=bsa&key=ZJ2R-PATE-9GXT-DWEI&json=y");
-        elevatorStatus =getJSONArray("https://api.bart.gov/api/bsa.aspx?cmd=elev&key=ZJ2R-PATE-9GXT-DWEI&json=y");
+        elevatorStatus = getJSONArray("https://api.bart.gov/api/bsa.aspx?cmd=elev&key=ZJ2R-PATE-9GXT-DWEI&json=y");
     }
 
     private String getJSONArray(String URL) {

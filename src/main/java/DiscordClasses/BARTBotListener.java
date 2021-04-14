@@ -2,6 +2,7 @@ package DiscordClasses;
 
 import APIClasses.APIAdvisories;
 import APIClasses.APIFareCalculator;
+import APIClasses.APITrainCount;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.jetbrains.annotations.NotNull;
@@ -26,13 +27,16 @@ public class BARTBotListener extends ListenerAdapter {
 
             //TESTING IN PROGRESS!!!
 
-            /*APIFareCalculator fareCalculator = new APIFareCalculator("12th","embr");
+            /*APIFareCalculator fareCalculator = new APIFareCalculator("civc","lafy");
             event.getChannel().sendMessage("Standard Fare (Clipper or Ticket): $" + fareCalculator.getClipper()
                     + "\nYouth Clipper: $" + fareCalculator.getYouthClipper()
-                    + "\nSenior Clipper: $" + fareCalculator.getSeniorClipper()).queue();*/
+                    + "\nSenior Clipper: $" + fareCalculator.getSeniorClipper()).queue();
 
             event.getChannel().sendMessage(new APIAdvisories().getAdvisories()).queue();
-            event.getChannel().sendMessage(new APIAdvisories().getElevatorStatus()).queue();
+            event.getChannel().sendMessage(new APIAdvisories().getElevatorStatus()).queue();*/
+            event.getChannel().sendMessage( "There are currently "
+                                            + new APITrainCount().getTrainCount()
+                                            + " trains in service.").queue();
         }
     }
 }
