@@ -6,6 +6,7 @@ public class StationAbbreviationsMap {
 
     public HashMap<String, String> getStnAbbrMap() {
 
+        //A HashMap containing a list of stations and their API abbreviations
         HashMap<String, String> stnAbbrMap = new HashMap<>();
             stnAbbrMap.put("12th", "12th St. Oakland City Center");
             stnAbbrMap.put("16th", "6th St. Mission (SF)");
@@ -61,10 +62,12 @@ public class StationAbbreviationsMap {
         return stnAbbrMap;
     }
 
+    //Returns the complete station abbreviation HashMap
     public String getStationName(String abbreviation) {
         return getStnAbbrMap().get(abbreviation);
     }
 
+    //Checks to see if given abbreviation exists in map
     public boolean containsAbbreviation(String abbreviation) {
         return getStnAbbrMap().containsKey(abbreviation);
     }
