@@ -25,8 +25,8 @@ public class BARTBotHelp extends ListenerAdapter {
         eb.addField("!help", "Displays this help message.", true);
         eb.addField("Map", "Displays image of the system map.", true);
         eb.addField("Advisories", "Displays current system advisories.", true);
-        eb.addField("Elevators", "Displays current status of system elevators.", true);
         eb.addField("Trains", "Displays current number of trains in service.", true);
+        eb.addField("Elevators", "Displays current status of system elevators.", true);
         eb.addField("Abbreviations", "Displays list of station names and their abbreviations", true);
         eb.addField("Departures <station name>", "Displays schedule of departing trains from a given station.", true);
         eb.addField("Fare <origin> <destination>", "Calculates fare cost of a trip given origin and destination stations.", true);

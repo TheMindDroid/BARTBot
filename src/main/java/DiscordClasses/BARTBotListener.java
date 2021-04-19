@@ -10,7 +10,7 @@ public class BARTBotListener extends ListenerAdapter {
 
     public void onGuildMessageReceived(@NotNull GuildMessageReceivedEvent event) {
 
-        //Parses discord message into String array
+        //Parses Discord message into String array
         String[] messageSentArray = event.getMessage().getContentRaw().split(" ");
 
         //Returns if sender is bot (to prevent the bot from listening to itself)
