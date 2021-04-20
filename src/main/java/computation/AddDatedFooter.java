@@ -10,6 +10,6 @@ public class AddDatedFooter {
         SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy hh:mm:ss a");
         Date date = new Date();
 
-        return "Request was made at " + formatter.format(date);
+        return "Request made at " + formatter.format(date);
     }
 }
