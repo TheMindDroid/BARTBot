@@ -7,7 +7,7 @@ public class StationAbbreviationsMap {
     public HashMap<String, String> getStnAbbrMap() {
 
         //A HashMap containing a list of stations and their API abbreviations
-        HashMap<String, String> stnAbbrMap = new HashMap<>();
+        final HashMap<String, String> stnAbbrMap = new HashMap<>();
             stnAbbrMap.put("12th", "12th St. Oakland City Center");
             stnAbbrMap.put("16th", "6th St. Mission (SF)");
             stnAbbrMap.put("19th", "19th St. Oakland");

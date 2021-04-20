@@ -36,10 +36,10 @@ public class BARTBotListener extends ListenerAdapter {
                 new BARTBotSystemMap().getStationMap(event);
                 break;
             case "advisories":
-                event.getChannel().sendMessage("advisories called...").queue();
+                new BARTBotAdvisories().getAdvisories(event);
                 break;
             case "elevators":
-                event.getChannel().sendMessage("elevators...").queue();
+                new BARTBotElevators().getElevators(event);
                 break;
             case "trains":
                 event.getChannel().sendMessage("trains called...").queue();
