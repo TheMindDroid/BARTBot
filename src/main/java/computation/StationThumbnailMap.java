@@ -17,7 +17,7 @@ public class StationThumbnailMap {
             stnThumbMap.put("ashb", URLBeginning + "ashby.jpg?itok=QPxWXSmA");
             stnThumbMap.put("antc", URLBeginning + "antioch.jpg?itok=GgKXkkQu");
             stnThumbMap.put("balb", URLBeginning + "balboa-park.jpg?itok=T9utxmcY");
-            stnThumbMap.put("bayf,", URLBeginning + "bay-fair.jpg?itok=2sne3dIp");
+            stnThumbMap.put("bayf", URLBeginning + "bay-fair.jpg?itok=2sne3dIp");
             stnThumbMap.put("bery", URLBeginning + "berryessa.jpg?itok=VRhzvtnz");
             stnThumbMap.put("cast", URLBeginning + "castro-valley.jpg?itok=ibY6doUg");
             stnThumbMap.put("civc", URLBeginning + "civic-center.jpg?itok=adgkQ-wt");

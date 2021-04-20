@@ -15,7 +15,7 @@ public class StationAbbreviationsMap {
             stnAbbrMap.put("ashb", "Ashby (Berkeley)");
             stnAbbrMap.put("antc", "Antioch");
             stnAbbrMap.put("balb", "Balboa Park (SF)");
-            stnAbbrMap.put("bayf,", "Bay Fair (San Leandro)");
+            stnAbbrMap.put("bayf", "Bay Fair (San Leandro)");
             stnAbbrMap.put("bery", "Berryessa");
             stnAbbrMap.put("cast", "Castro Valley");
             stnAbbrMap.put("civc", "Civic Center (SF)");
