@@ -42,7 +42,7 @@ public class BARTBotListener extends ListenerAdapter {
                 new BARTBotElevators().getElevators(event);
                 break;
             case "trains":
-                event.getChannel().sendMessage("trains called...").queue();
+                new BARTBotTrainCount().getTrainCount(event);
                 break;
             case "abbreviations":
                 event.getChannel().sendMessage("abbreviations called...").queue();
