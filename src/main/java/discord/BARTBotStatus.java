@@ -1,4 +1,4 @@
-package DiscordClasses;
+package discord;
 
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.events.ReadyEvent;

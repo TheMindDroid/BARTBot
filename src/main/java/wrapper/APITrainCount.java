@@ -1,4 +1,4 @@
-package APIClasses;
+package wrapper;
 
 public class APITrainCount {
 

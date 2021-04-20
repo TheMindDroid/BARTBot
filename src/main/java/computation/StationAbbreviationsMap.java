@@ -1,4 +1,4 @@
-package ComputationalClasses;
+package computation;
 
 import java.util.HashMap;
 

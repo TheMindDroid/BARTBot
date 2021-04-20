@@ -1,6 +1,6 @@
-package DiscordClasses;
+package discord;
 
-import APIClasses.APIAdvisories;
+import wrapper.APIAdvisories;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 

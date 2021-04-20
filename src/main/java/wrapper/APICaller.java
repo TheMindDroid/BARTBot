@@ -1,4 +1,4 @@
-package APIClasses;
+package wrapper;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
