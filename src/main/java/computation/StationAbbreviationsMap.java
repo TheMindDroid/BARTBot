@@ -1,13 +1,13 @@
 package computation;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class StationAbbreviationsMap {
 
-    public HashMap<String, String> getStnAbbrMap() {
+    public LinkedHashMap<String, String> getStnAbbrMap() {
 
         //A HashMap containing a list of stations and their API abbreviations
-        final HashMap<String, String> stnAbbrMap = new HashMap<>();
+        final LinkedHashMap<String, String> stnAbbrMap = new LinkedHashMap<>();
             stnAbbrMap.put("12th", "12th St. Oakland City Center");
             stnAbbrMap.put("16th", "6th St. Mission (SF)");
             stnAbbrMap.put("19th", "19th St. Oakland");

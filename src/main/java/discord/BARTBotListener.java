@@ -51,7 +51,13 @@ public class BARTBotListener extends ListenerAdapter {
                 event.getChannel().sendMessage("departures called...").queue();
                 break;
             case "fare":
-                event.getChannel().sendMessage("fare called...").queue();
+                if (messageSentArray.length < 4) {
+                    new BARTBotErrorMessage(event, "Insufficient Abbreviations.",
+                            "Please enter origin and destination stations. Type '!BART Abbreviations' " +
+                                    "for a list of station abbreviations.").sendErrorMessage();
+                    return;
+                }
+                new BARTBotFareCalculator(messageSentArray[2].toLowerCase(), messageSentArray[3].toLowerCase()).getFare(event);
                 break;
             default:
                 new BARTBotErrorMessage(event, "Invalid Arguments.",

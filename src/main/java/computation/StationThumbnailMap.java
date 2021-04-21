@@ -1,15 +1,15 @@
 package computation;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 
 public class StationThumbnailMap {
 
-    public HashMap<String, String> stnThumbMap() {
+    public LinkedHashMap<String, String> stnThumbMap() {
 
         String URLBeginning = "https://www.bart.gov/sites/default/files/styles/station-intro-img/public/images/station/";
 
         //A HashMap containing a list of stations and their API abbreviations
-        final HashMap<String, String> stnThumbMap = new HashMap<>();
+        final LinkedHashMap<String, String> stnThumbMap = new LinkedHashMap<>();
             stnThumbMap.put("12th", URLBeginning + "12th-street.jpg?itok=Vf3hVt3q");
             stnThumbMap.put("16th", URLBeginning + "16th-street.jpg?itok=EqSGzKBF");
             stnThumbMap.put("19th", URLBeginning + "19th-Street.jpg?itok=JysKsZu_");
