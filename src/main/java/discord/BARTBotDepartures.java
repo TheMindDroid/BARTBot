@@ -23,6 +23,7 @@ public class BARTBotDepartures {
 
         StationAbbreviationsMap map = new StationAbbreviationsMap();
 
+        //Checks to see if user input correct station abbreviation
         if (!map.containsAbbreviation(origin)) {
             new BARTBotErrorMessage(event, "Invalid Abbreviations.",
                     "Incorrect station abbreviation entered. Type '!BART Abbreviations' " +
@@ -35,11 +36,14 @@ public class BARTBotDepartures {
 
         String thumbnail = new StationThumbnailMap().getStationThumbnail(origin);
 
+        //Builds the Discord embed for the departures API
         EmbedBuilder eb = new EmbedBuilder();
         eb.setTitle(":arrow_left: Departures From " + map.getStationName(origin));
         eb.setThumbnail(thumbnail);
         eb.setColor(Color.GREEN);
 
+
+        //Parses through JSON data to get departure times
         for (JsonElement stations : stationArray) {
 
             JsonArray etdArray = stations.getAsJsonObject().getAsJsonArray("etd");

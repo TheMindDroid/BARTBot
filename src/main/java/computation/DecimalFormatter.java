@@ -10,6 +10,7 @@ public class DecimalFormatter {
         this.unformatted = unformatted;
     }
 
+    //Takes a dollar value and adds the tenths and hundredth's places
     public String format() {
         DecimalFormat df = new DecimalFormat("#.00");
         return df.format(unformatted);

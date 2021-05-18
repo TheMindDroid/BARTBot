@@ -9,6 +9,7 @@ import java.awt.*;
 
 public class BARTBotTrainCount {
 
+    //Builds the Discord embed for the train count API
     public void getTrainCount(GuildMessageReceivedEvent event) {
         EmbedBuilder eb = new EmbedBuilder();
         eb.setColor(Color.GREEN);

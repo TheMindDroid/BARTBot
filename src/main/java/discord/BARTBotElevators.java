@@ -9,6 +9,7 @@ import java.awt.*;
 
 public class BARTBotElevators {
 
+    //Builds the Discord embed for the elevators API
     public void getElevators(GuildMessageReceivedEvent event) {
         EmbedBuilder eb = new EmbedBuilder();
         eb.setColor(Color.GREEN);

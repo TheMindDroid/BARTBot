@@ -9,6 +9,7 @@ import java.awt.*;
 
 public class BARTBotAdvisories {
 
+    //Builds the Discord embed for the advisories API
     public void getAdvisories(GuildMessageReceivedEvent event) {
         EmbedBuilder eb = new EmbedBuilder();
         eb.setColor(Color.GREEN);
