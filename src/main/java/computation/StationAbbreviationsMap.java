@@ -22,7 +22,7 @@ public class StationAbbreviationsMap {
             stnAbbrMap.put("cols", "Coliseum");
             stnAbbrMap.put("colm", "Colma");
             stnAbbrMap.put("conc", "Concord");
-            stnAbbrMap.put("daly", "Daly City");
+            stnAbbrMap.put("daly", "Daily City");
             stnAbbrMap.put("dbrk", "Downtown Berkeley");
             stnAbbrMap.put("dubl", "Dublin/Pleasanton");
             stnAbbrMap.put("deln", "El Cerrito del Norte");
